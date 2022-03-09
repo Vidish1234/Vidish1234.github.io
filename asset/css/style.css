@@ -26503,8 +26503,6 @@ textarea[resize='horizontal']
 {
     box-shadow: 0 0 10px rgba(31, 45, 61, .03);
 }
-
-.header,
 .navbar,
 .navbar-top
 {
@@ -26512,7 +26510,6 @@ textarea[resize='horizontal']
 }
 @media (prefers-reduced-motion: reduce)
 {
-    .header,
     .navbar,
     .navbar-top
     {
@@ -29766,8 +29763,6 @@ article p
 {
     box-shadow: 0 0 10px rgba(31, 45, 61, .03);
 }
-
-.header,
 .navbar,
 .navbar-top
 {
@@ -29775,7 +29770,6 @@ article p
 }
 @media (prefers-reduced-motion: reduce)
 {
-    .header,
     .navbar,
     .navbar-top
     {
