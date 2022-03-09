@@ -6,17 +6,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <title>Hacker Vidish</title>
-	<link rel="icon" type="image/png" href="/images/profile.jpg" sizes="32x32" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="icon" type="image/png" href="favicon.ico" sizes="32x32" />
         <link rel="stylesheet" href="asset/css/all.min.css">
         <link rel="stylesheet" href="asset/css/select2.min.css">
         <link rel="stylesheet" href="asset/css/style.css" id="stylesheet">
                 <style>body{min-height: 100vh;color: #ffffff;background: #FC466B;background: linear-gradient(135deg,#3F5EFB 0%, #FC466B 100%);}.fab{font-size: 1.3em}h1,h3,em,p,a{color: #ffffff !important;}a:hover{color: #ffffff;opacity: 0.8;}.btn-custom{background: #ffffff;color: #FC466B !important;}.btn-custom:hover{opacity: 0.8;color: #FC466B;}.rss{height:300px} .rss a{color:#000 !important}.item > h1,.item > h2,.item > h3,.item > h4,.item > h5,.item > h6{color:#ffffff;}</style>
             </head>
     <body>
-        <script type="text/javascript">
-$(document).ready(function(e) {
-    $('#header').load('navbar.html',function(){alert('loaded')});
-});
+       <script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+<div w3-include-html="navbar.html"></div>
+<script>
+includeHTML();
 </script>
         <div class="container mt-5 mb-2" id="profile">    
     <div class="row">
