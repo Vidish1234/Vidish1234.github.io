@@ -7831,59 +7831,6 @@ a.close.disabled
     }
 }
 
-.tooltip
-{
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: .875rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.7;
-
-    position: absolute;
-    z-index: 1070;
-
-    display: block;
-
-    margin: 0;
-
-    text-align: left;
-    text-align: start;
-    white-space: normal;
-    text-decoration: none;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    word-wrap: break-word;
-    word-break: normal;
-
-    opacity: 0; 
-    text-shadow: none;
-
-    line-break: auto;
-}
-.tooltip.show
-{
-    opacity: .9;
-}
-.tooltip .arrow
-{
-    position: absolute;
-
-    display: block;
-
-    width: .8rem;
-    height: .4rem;
-}
-.tooltip .arrow::before
-{
-    position: absolute;
-
-    content: '';
-
-    border-style: solid; 
-    border-color: transparent;
-}
-
 .bs-tooltip-top,
 .bs-tooltip-auto[x-placement^='top']
 {
